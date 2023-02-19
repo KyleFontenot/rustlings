@@ -6,6 +6,10 @@
 #[derive(Debug)]
 enum Message {
     // TODO: define the different variants used below
+    Move: { x: usize, y: usize },
+    Echo: String,
+    ChangeColor: (u16, u16, u16),
+    Quit
 }
 
 impl Message {
