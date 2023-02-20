@@ -1,14 +1,15 @@
 // enums2.rs
 // Execute `rustlings hint enums2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+
+struct MoveType { x: usize, y: usize }
 
 #[derive(Debug)]
 enum Message {
     // TODO: define the different variants used below
-    Move: { x: usize, y: usize },
-    Echo: String,
-    ChangeColor: (u16, u16, u16),
+    Move {x: u16, y: u16},
+    Echo(String),
+    ChangeColor(u16, u16, u16),
     Quit
 }
 
